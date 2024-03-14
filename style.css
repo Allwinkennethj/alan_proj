@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    list-style-type: none;
+    font-weight: bold;
+    color: #fff;
+  }
+  input{
+    color: #000;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: #000;
+  }
+  header {
+    width: 100%;
+    background: url(../image/performance.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .nav {
+    width: 100%;
+    height: 50px;
+    background: #000;
+  }
+  span {
+    font-size: 25px;
+    padding-left: 20px;
+    cursor: pointer;
+    line-height: 50px;
+  }
+  
+  .nav ul {
+    float: right;
+    padding-right: 20px;
+  }
+  
+  .nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0px 10px;
+    padding: 0px 15px;
+    transition: 0.2s linear;
+  }
+  .nav ul li:hover {
+    background-color: #656363;
+  }
+  li:after {
+    content: " ";
+    display: block;
+    height: 3px;
+    margin: 0;
+    width: 0%;
+  }
+  li:hover:after {
+    width: 100%;
+    background: #fff;
+    transition: 0.2s linear;
+    border-radius: 50px;
+  }
+  .box {
+    height: 550px;
+    width: 400px;
+    background: #fff;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 70px;
+  }
+  h1 {
+    padding: 25px;
+    color: #000;
+  }
+  button.log {
+    padding: 15px;
+    width: 170px;
+    font-size: 17px;
+    margin: -3px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #030344, #000066);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    border: 1px solid transparent;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  button.signupchange{
+    padding: 15px;
+    width: 170px;
+    font-size: 17px;
+    margin: -3px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #030344, #000066);
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  button.signupbutton{
+    font-size: 17px;
+    color: #fff;
+    background: linear-gradient(to right, #030344, #000066);
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    margin-top: 25px;
+    width: 340px;
+  }
+  button.loginchange{
+    padding: 15px;
+    width: 170px;
+    font-size: 17px;
+    margin: -3px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid rgb(175, 173, 173);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  button.signupchange:hover {
+    background: linear-gradient(to right, #03036d, #020282);
+    border: 1px solid rgb(175, 173, 173);
+  }
+  button.log:hover {
+    background: linear-gradient(to right, #03036d, #020282);
+    border: 1px solid rgb(175, 173, 173);
+  }
+  button.signup {
+    padding: 15px;
+    width: 170px;
+    font-size: 17px;
+    margin: -3px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border: 1px solid rgb(175, 173, 173);
+    border-radius: 3px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  button.signup:hover {
+    background: rgb(220, 220, 220);
+  }
+  .inp input {
+    width: 340px;
+    height: 45px;
+    margin-top: 35px;
+    font-size: 17px;
+    padding-left: 12px;
+    border: 1px solid;
+    color: #000;
+  }
+  input:hover {
+    background: rgb(220, 220, 220);
+    border: 1px solid rgb(175, 173, 173);
+  }
+  .fp {
+    text-align: left;
+    margin-left: 13px;
+    font-size: 15px;
+    cursor: pointer;
+    padding-top: 13px;
+  }
+  .fp :hover {
+    color: #000066;
+  }
+  .fp a {
+    text-decoration: none;
+    color: blue;
+  }
+  .login {
+    padding: 15px;
+    margin-top: 25px;
+    width: 340px;
+  }
+  h3 {
+    margin-top: 30px;
+    font-size: 17px;
+    word-spacing: 2px;
+    color: #000;
+    font-weight: normal;
+  }
+  button.login {
+    font-size: 17px;
+    color: #fff;
+    background: linear-gradient(to right, #030344, #000066);
+    border: none;
+    border-radius: 50px;
+  }
+  button.login:hover {
+    background: linear-gradient(to right, #03036d, #020282);
+    border-radius: 50px;
+  }
+  h3 a {
+    text-decoration: none;
+    color: blue;
+  }
+  h3 :hover {
+    color: #000066;
+  }
+  
+  @media (max-width: 700px) {
+    .nav ul {
+      position: fixed;
+      width: 100%;
+      height: 260px;
+      background: #000066;
+      text-align: center;
+      padding: 0;
+      top: -100%;
+      transition: 0.5s ease;
+    }
+    .nav ul li {
+      display: block;
+      width: 100%;
+      margin: 0;
+      transition: 0.2s ease;
+    }
+    .nav ul li:hover {
+      background: #000088;
+    }
+    nav ul.slide {
+      top: 50px;
+      transition: 0.5s ease;
+    }
+    .hamburger {
+      float: right;
+      padding-top: 12px;
+      padding-right: 20px;
+    }
+    .hamburger .line {
+      width: 12px;
+      height: 5px;
+      background: #fff;
+      margin-bottom: 5px;
+      display: block;
+    }
+    li:after {
+      display: none;
+    }
+    .box {
+      display: none;
+    }
+  }
+  table{
+    margin-top: 3rem;
+    background: #808080;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  th, td{
+    padding: 20px;
+    text-align: left;
+  }
+  td{
+    font-weight: normal;
+    color: #ffffff99;
+  }
+  .evaluation-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .evaluation-form input{
+    width: 15rem;
+    height: 2rem;
+  }
+  .submit-button{
+    text-align: center;
+    margin: 1rem auto 0;
+    color: #000;
+    padding: 7px;
+    cursor: pointer;
+  }
